@@ -1,9 +1,6 @@
-/* Open Sans - Hybrid approach: Local fonts with Google Fonts fallback */
+/* Open Sans - Local fonts only for PWA */
 
-/* Import Google Fonts as fallback */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-
-/* Local font definitions - will take priority when available */
+/* Local font definitions */
 
 /* open-sans-latin-300-normal */
 @font-face {
