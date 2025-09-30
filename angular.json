@@ -34,7 +34,12 @@
               "src/favicon.ico",
               "src/assets",
               "src/manifest.json",
-              "src/static"
+              "src/static",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@fontsource/open-sans/files",
+                "output": "/assets/fonts/open-sans"
+              }
             ],
             "styles": ["src/styles.scss"],
             "scripts": [],

@@ -3,11 +3,8 @@
 
 @use 'sass:math';
 
-// Import fonts from @fontsource for development and desktop
-@import '../node_modules/@fontsource/open-sans/400.css';
-@import '../node_modules/@fontsource/open-sans/400-italic.css';
-@import '../node_modules/@fontsource/open-sans/700.css';
-@import '../node_modules/@fontsource/open-sans/300.css';
+// Font imports - using custom CSS with correct paths for PWA
+@import 'styles/fonts/open-sans.css';
 
 @include meta.load-css('styles/_css-variables');
 @include meta.load-css('styles/themes');
