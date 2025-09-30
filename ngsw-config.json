@@ -14,7 +14,7 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "resources": {
-        "files": ["/assets/**"]
+        "files": ["/assets/**", "!/assets/bundled-plugins/**"]
       }
     },
     {

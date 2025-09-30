@@ -27,7 +27,7 @@
     "env": "node ./tools/load-env.js",
     "assemble:android:prod": "cd android && ./gradlew assembleRelease && cd ..",
     "assemble:android:stage": "cd android && ./gradlew assembleDebug && cd ..",
-    "prebuild": "npm run env && node ./tools/git-version.js && npm run build:packages && npm run copy:fonts",
+    "prebuild": "npm run env && node ./tools/git-version.js && npm run build:packages",
     "build": "npm run buildAllElectron:noTests:prod",
     "build:packages": "node ./packages/build-packages.js",
     "copy:fonts": "node ./tools/copy-fonts.js",
