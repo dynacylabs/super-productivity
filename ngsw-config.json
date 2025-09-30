@@ -11,61 +11,10 @@
     },
     {
       "name": "assets",
-      "installMode": "prefetch",
-      "updateMode": "prefetch",
-      "resources": {
-        "files": ["/assets/**", "!/assets/bundled-plugins/**"]
-      }
-    },
-    {
-      "name": "criticalAssets",
-      "installMode": "prefetch",
-      "updateMode": "prefetch",
-      "resources": {
-        "files": [
-          "/assets/icons/*.svg",
-          "/assets/icons/icon-*.png",
-          "/assets/icons/favicon-*.png",
-          "/assets/i18n/en.json",
-          "/assets/fonts/MaterialIcons-Regular.ttf"
-        ]
-      }
-    },
-    {
-      "name": "fonts",
-      "installMode": "prefetch",
-      "updateMode": "prefetch",
-      "resources": {
-        "files": [
-          "/*.(woff|woff2|ttf|otf|eot)",
-          "/**/*.(woff|woff2|ttf|otf|eot)",
-          "/files/*.(woff|woff2|ttf|otf|eot)"
-        ],
-        "urls": ["**/*.(woff|woff2|ttf|otf|eot)", "**/files/*.(woff|woff2|ttf|otf|eot)"]
-      }
-    },
-    {
-      "name": "externalAssets",
       "installMode": "lazy",
       "updateMode": "prefetch",
       "resources": {
-        "urls": ["**/*.(png|jpg|jpeg|gif)"]
-      }
-    }
-  ],
-  "dataGroups": [
-    {
-      "name": "api-freshness",
-      "urls": [
-        "https://api.github.com/**",
-        "https://gitlab.com/api/**",
-        "https://*.atlassian.net/**"
-      ],
-      "cacheConfig": {
-        "strategy": "freshness",
-        "maxSize": 10,
-        "maxAge": "1h",
-        "timeout": "10s"
+        "files": ["/assets/**", "!/assets/bundled-plugins/**"]
       }
     }
   ]

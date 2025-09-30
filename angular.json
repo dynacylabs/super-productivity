@@ -34,12 +34,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/manifest.json",
-              "src/static",
-              {
-                "glob": "**/*",
-                "input": "node_modules/@fontsource/open-sans/files",
-                "output": "/assets/fonts/open-sans"
-              }
+              "src/static"
             ],
             "styles": ["src/styles.scss"],
             "scripts": [],
@@ -61,8 +56,7 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": false,
-              "aot": false,
-              "serviceWorker": "ngsw-config.json"
+              "aot": false
             },
             "production": {
               "baseHref": "",
