@@ -11,7 +11,7 @@
     },
     {
       "name": "assets",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "resources": {
         "files": ["/assets/**"]
@@ -27,9 +27,21 @@
           "/assets/icons/icon-*.png",
           "/assets/icons/favicon-*.png",
           "/assets/i18n/en.json",
-          "/assets/fonts/MaterialIcons-Regular.ttf",
-          "/*.(otf|ttf|woff|woff2)"
+          "/assets/fonts/MaterialIcons-Regular.ttf"
         ]
+      }
+    },
+    {
+      "name": "fonts",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/*.(woff|woff2|ttf|otf|eot)",
+          "/**/*.(woff|woff2|ttf|otf|eot)",
+          "/files/*.(woff|woff2|ttf|otf|eot)"
+        ],
+        "urls": ["**/*.(woff|woff2|ttf|otf|eot)", "**/files/*.(woff|woff2|ttf|otf|eot)"]
       }
     },
     {
