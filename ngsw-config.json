@@ -32,7 +32,12 @@
           "/assets/icons/**/*.png",
           "/assets/icons/**/*.svg",
           "/assets/icons/**/*.xml",
-          "/assets/icons/**"
+          "/assets/icons/browserconfig.xml",
+          "/assets/icons/safari-pinned-tab.svg",
+          "/assets/icons/apple-touch-icon.png",
+          "/assets/icons/favicon-16x16.png",
+          "/assets/icons/favicon-32x32.png",
+          "/assets/icons/favicon-192x192.png"
         ]
       }
     },
@@ -45,6 +50,14 @@
       }
     },
     {
+      "name": "i18n",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/i18n/**/*.json"]
+      }
+    },
+    {
       "name": "lazy-assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
@@ -54,8 +67,20 @@
           "!/assets/bundled-plugins/**",
           "!/assets/fonts/**",
           "!/assets/icons/**",
-          "!/assets/themes/**"
+          "!/assets/themes/**",
+          "!/assets/i18n/**"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-cache",
+      "urls": [],
+      "cacheConfig": {
+        "maxSize": 100,
+        "maxAge": "1d",
+        "strategy": "freshness"
       }
     }
   ]
