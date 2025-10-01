@@ -5,23 +5,43 @@
     {
       "name": "app",
       "installMode": "prefetch",
+      "updateMode": "prefetch",
       "resources": {
         "files": ["/favicon.ico", "/index.html", "/manifest.json", "/*.css", "/*.js"]
       }
     },
     {
-      "name": "assets",
+      "name": "fonts",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "resources": {
         "files": [
           "/assets/fonts/**/*.woff2",
           "/assets/fonts/**/*.woff",
-          "/assets/icons/**",
-          "/assets/themes/**",
-          "!/assets/bundled-plugins/**"
-        ],
-        "urls": []
+          "/assets/fonts/**/*.ttf",
+          "/assets/fonts/**/*.css"
+        ]
+      }
+    },
+    {
+      "name": "icons",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/icons/**/*.png",
+          "/assets/icons/**/*.svg",
+          "/assets/icons/**/*.xml",
+          "/assets/icons/**"
+        ]
+      }
+    },
+    {
+      "name": "themes",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/themes/**"]
       }
     },
     {
