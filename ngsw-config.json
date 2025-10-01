@@ -11,10 +11,31 @@
     },
     {
       "name": "assets",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/fonts/**/*.woff2",
+          "/assets/fonts/**/*.woff",
+          "/assets/icons/**",
+          "/assets/themes/**",
+          "!/assets/bundled-plugins/**"
+        ],
+        "urls": []
+      }
+    },
+    {
+      "name": "lazy-assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
       "resources": {
-        "files": ["/assets/**", "!/assets/bundled-plugins/**"]
+        "files": [
+          "/assets/**",
+          "!/assets/bundled-plugins/**",
+          "!/assets/fonts/**",
+          "!/assets/icons/**",
+          "!/assets/themes/**"
+        ]
       }
     }
   ]

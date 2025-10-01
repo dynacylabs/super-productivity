@@ -14,10 +14,19 @@ app-root,
   box-sizing: border-box;
   font-optical-sizing: auto;
   font-family: 'Open Sans', sans-serif;
+
+  // iOS PWA safe area support
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
 html {
   overflow: hidden !important;
+  // iOS PWA: prevent rubber band scrolling
+  position: fixed;
+  width: 100%;
 
   button,
   a {
@@ -26,12 +35,12 @@ html {
 }
 
 body {
-  // to fix older android web view
+  // to fix older android web view and iOS PWA
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: env(safe-area-inset-top, 0);
+  left: env(safe-area-inset-left, 0);
+  right: env(safe-area-inset-right, 0);
+  bottom: env(safe-area-inset-bottom, 0);
   width: 100%;
   height: 100%;
 
