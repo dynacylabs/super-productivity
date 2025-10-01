@@ -69,7 +69,7 @@
               "aot": false
             },
             "production": {
-              "baseHref": "",
+              "baseHref": "./",
               "budgets": [
                 {
                   "type": "anyComponentStyle",
@@ -88,7 +88,7 @@
                   "minify": true,
                   "inlineCritical": false
                 },
-                "fonts": true
+                "fonts": false
               },
               "outputHashing": "all",
               "sourceMap": true,
@@ -98,6 +98,7 @@
               "serviceWorker": "ngsw-config.json"
             },
             "productionWeb": {
+              "baseHref": "./",
               "outputPath": {
                 "base": "dist",
                 "browser": "browser"
@@ -120,7 +121,7 @@
                   "minify": true,
                   "inlineCritical": true
                 },
-                "fonts": true
+                "fonts": false
               },
               "outputHashing": "all",
               "sourceMap": true,
@@ -130,7 +131,7 @@
               "serviceWorker": "ngsw-config.json"
             },
             "stage": {
-              "baseHref": "",
+              "baseHref": "./",
               "budgets": [
                 {
                   "type": "anyComponentStyle",
@@ -149,7 +150,7 @@
                   "minify": true,
                   "inlineCritical": true
                 },
-                "fonts": true
+                "fonts": false
               },
               "outputHashing": "all",
               "sourceMap": true,
@@ -159,6 +160,7 @@
               "serviceWorker": false
             },
             "stageWeb": {
+              "baseHref": "./",
               "outputPath": {
                 "base": "dist",
                 "browser": "browser"
@@ -181,7 +183,7 @@
                   "minify": true,
                   "inlineCritical": true
                 },
-                "fonts": true
+                "fonts": false
               },
               "outputHashing": "all",
               "sourceMap": true,
